@@ -1,0 +1,25 @@
+{
+  "name": "chix-url",
+  "description": "Node's Url for Chiχ",
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/url.git"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "devDependencies": {
+    "chit": "0.x.x"
+  },
+  "main": "x",
+  "scripts": {
+    "test": "chit"
+  },
+  "chix": {
+    "name": "url",
+    "color": "rgb(71,162,170)"
+  }
+}

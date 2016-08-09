@@ -1,0 +1,32 @@
+{
+  "name": "parse",
+  "ns": "url",
+  "description": "Takes a URL string, parses it, and returns a URL object",
+  "phrases": {
+    "active": "Parsing url {{input.in}}"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "type": "string",
+        "title": "Url",
+        "description": "The URL string parse"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "Out",
+        "type": "string"
+      },
+      "error": {
+        "title": "Error",
+        "type": "object"
+      }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "url": "builtin"
+    }
+  }
+}

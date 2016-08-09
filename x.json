@@ -1,0 +1,44 @@
+{
+  "name": "url",
+  "description": "Node's Url for Chiχ",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/url.git"
+  },
+  "nodes": [
+    {
+      "name": "parse",
+      "ns": "url",
+      "description": "Takes a URL string, parses it, and returns a URL object",
+      "phrases": {
+        "active": "Parsing url {{input.in}}"
+      },
+      "ports": {
+        "input": {
+          "in": {
+            "type": "string",
+            "title": "Url",
+            "description": "The URL string parse"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Out",
+            "type": "string"
+          },
+          "error": {
+            "title": "Error",
+            "type": "object"
+          }
+        }
+      },
+      "dependencies": {
+        "npm": {
+          "url": "builtin"
+        }
+      },
+      "fn": "output = function () {\n  cb({out: $.write('in', url.parse($.in, true))});\n};\n"
+    }
+  ]
+}
